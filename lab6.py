@@ -8,6 +8,15 @@ def encoder(x):
             new_pass = new_pass + str((int(i) + 3))
     return x
 
+def decoder(y):
+    new_string = ""
+    for i in y:
+        if int(i) - 3 < 0:
+            new_string += str(int(i) + 10 - 3)
+        else:
+            new_string += str(int(i) - 3)
+    return new_string
+
 while True:
     print("Menu")
     print("-------------")
