@@ -7,7 +7,7 @@ def encoder(x):
         else:
             new_pass = new_pass + str((int(i) + 3))
     return x
-
+#Miles Moerman
 def decoder(y):
     new_string = ""
     for i in y:
